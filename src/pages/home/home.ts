@@ -19,6 +19,18 @@ export class HomePage {
     this.items = reorderArray(this.items, indexes);
   }
 
+  onElementClick() {
+    console.log('I was touched');
+  }
+
+  onElementTapped() {
+    console.log('I was tapped');
+  }
+
+  onElementPressed() {
+    console.log('I was pressed');
+  }
+
 
 
 }

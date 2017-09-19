@@ -5,11 +5,16 @@
 </ion-header>
 
 <ion-content padding>
+    <div class="gestures" (click)="onElementClick()">Click Me </div>
+
+    <div class="gestures" (tap)="onElementTapped()">Tap Me </div>
+
+    <div class="gestures" (press)="onElementPressed()" 
+     (click)="onElementClick()">Long Press Me </div>
     <ion-grid>
         <ion-row>
             <ion-col col-3>A column</ion-col>
             <ion-col>A second column</ion-col>
-
         </ion-row>
         <ion-row>
             <ion-col offset-3>A new column</ion-col>
