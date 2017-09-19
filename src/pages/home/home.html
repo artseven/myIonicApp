@@ -4,9 +4,11 @@
     </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding> 
   <button ion-button color="secondary" (click)="onClick()">A normal button
   </button>
-  <button ion-button round (click)="onClick()">Another button
+  <button ion-button large block icon-left (click)="onClick()">
+    <ion-icon name="home"></ion-icon>
+    Home
   </button>
 </ion-content>
