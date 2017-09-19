@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, reorderArray } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
-
+  items = ['Apples', 'Bananas', 'Berries'];
   constructor(public navCtrl: NavController) {
 
   }
@@ -14,5 +14,11 @@ export class HomePage {
   onClick() {
     console.log('clicked!');
   }
+
+  reorderItems(indexes) {
+    this.items = reorderArray(this.items, indexes);
+  }
+
+
 
 }
