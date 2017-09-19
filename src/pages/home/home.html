@@ -5,6 +5,16 @@
 </ion-header>
 
 <ion-content padding>
+    <ion-grid>
+        <ion-row>
+            <ion-col col-3>A column</ion-col>
+            <ion-col>A second column</ion-col>
+
+        </ion-row>
+        <ion-row>
+            <ion-col offset-3>A new column</ion-col>
+        </ion-row>
+    </ion-grid>
     <button ion-button color="secondary" (click)="onClick()">A normal button
   </button>
     <button ion-button block icon-left (click)="onClick()">
@@ -47,4 +57,4 @@
             {{ item}}
         </ion-item>
     </ion-list>
-  </ion-content>
+</ion-content>
